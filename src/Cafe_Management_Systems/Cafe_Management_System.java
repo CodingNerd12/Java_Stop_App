@@ -16,6 +16,7 @@ import java.util.Random;
 public class Cafe_Management_System extends javax.swing.JFrame {
 double [] drink = new double[12];
 double [] treat = new double[10];
+double [] cost = new double[3];
     /**
      * Creates new form Cafe_Management_System
      */
@@ -85,9 +86,15 @@ double [] treat = new double[10];
         jScrollPane1 = new javax.swing.JScrollPane();
         jTxtReceipt = new javax.swing.JTextArea();
         jPanel5 = new javax.swing.JPanel();
-        jLabelTax = new javax.swing.JLabel();
-        jLabelSubT = new javax.swing.JLabel();
-        jLabelTotal = new javax.swing.JLabel();
+        jLabelTaxes = new javax.swing.JLabel();
+        jLabelSubTote = new javax.swing.JLabel();
+        jLabelTotale = new javax.swing.JLabel();
+        jScrollPane22 = new javax.swing.JScrollPane();
+        jLabelTax = new javax.swing.JEditorPane();
+        jScrollPane23 = new javax.swing.JScrollPane();
+        jLabelSubT = new javax.swing.JEditorPane();
+        jScrollPane24 = new javax.swing.JScrollPane();
+        jLabelTotal = new javax.swing.JEditorPane();
         jPanel6 = new javax.swing.JPanel();
         jBtnTotal = new javax.swing.JButton();
         jBtnReceipt = new javax.swing.JButton();
@@ -97,6 +104,12 @@ double [] treat = new double[10];
         jLabelDrinks = new javax.swing.JLabel();
         jLabelTreats = new javax.swing.JLabel();
         jLabelServChrg = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jEditorPane1 = new javax.swing.JEditorPane();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jEditorPane2 = new javax.swing.JEditorPane();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jEditorPane3 = new javax.swing.JEditorPane();
         jPanel9 = new javax.swing.JPanel();
         jChxCrois = new javax.swing.JCheckBox();
         jChxCheez = new javax.swing.JCheckBox();
@@ -465,40 +478,74 @@ double [] treat = new double[10];
 
         jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(null));
 
-        jLabelTax.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabelTax.setText("Tax");
+        jLabelTaxes.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabelTaxes.setText("Tax");
 
-        jLabelSubT.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabelSubT.setText("Subtotal");
+        jLabelSubTote.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabelSubTote.setText("Subtotal");
 
-        jLabelTotal.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabelTotal.setText("Total");
+        jLabelTotale.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabelTotale.setText("Total");
+
+        jLabelTax.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabelTax.setText("0");
+        jScrollPane22.setViewportView(jLabelTax);
+
+        jLabelSubT.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabelSubT.setText("0");
+        jScrollPane23.setViewportView(jLabelSubT);
+
+        jLabelTotal.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabelTotal.setText("0");
+        jScrollPane24.setViewportView(jLabelTotal);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(23, 23, 23)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelTotal)
-                    .addComponent(jLabelTax)
-                    .addComponent(jLabelSubT))
-                .addContainerGap(430, Short.MAX_VALUE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabelTaxes)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabelTotale)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(jLabelSubTote)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
+                        .addComponent(jScrollPane23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jLabelTax)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabelTaxes)
+                                .addGap(18, 18, 18))
+                            .addGroup(jPanel5Layout.createSequentialGroup()
+                                .addGap(31, 31, 31)
+                                .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)))
+                        .addComponent(jLabelSubTote))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jScrollPane23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addComponent(jLabelSubT)
-                .addGap(18, 18, 18)
-                .addComponent(jLabelTotal)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelTotale)
+                    .addComponent(jScrollPane24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27))
         );
 
-        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 770, 510, 130));
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 620, 320, 170));
 
         jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(null));
 
@@ -574,35 +621,54 @@ double [] treat = new double[10];
         jLabelServChrg.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabelServChrg.setText("Service Charge");
 
+        jScrollPane2.setViewportView(jEditorPane1);
+
+        jScrollPane3.setViewportView(jEditorPane2);
+
+        jScrollPane7.setViewportView(jEditorPane3);
+
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelServChrg)
-                            .addComponent(jLabelTreats))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabelDrinks)
-                        .addGap(137, 379, Short.MAX_VALUE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel8Layout.createSequentialGroup()
+                        .addComponent(jLabelServChrg)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jLabelTreats)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(31, 31, 31))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jLabelDrinks)
-                .addGap(18, 18, 18)
-                .addComponent(jLabelTreats)
+                .addGap(39, 39, 39)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jLabelDrinks)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabelTreats))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(19, 19, 19)
-                .addComponent(jLabelServChrg)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabelServChrg)
+                    .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 630, 510, -1));
+        getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 620, 320, 170));
 
         jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(null));
 
@@ -647,18 +713,23 @@ double [] treat = new double[10];
 
         jLabel37.setText("$1.00");
 
+        jTxtBost.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtBost.setText("0");
         jScrollPane4.setViewportView(jTxtBost);
 
+        jTxtCpop.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtCpop.setText("0");
         jScrollPane18.setViewportView(jTxtCpop);
 
+        jTxtCheez.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtCheez.setText("0");
         jScrollPane19.setViewportView(jTxtCheez);
 
+        jTxtCoffCake.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtCoffCake.setText("0");
         jScrollPane20.setViewportView(jTxtCoffCake);
 
+        jTxtCrois.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtCrois.setText("0");
         jScrollPane21.setViewportView(jTxtCrois);
 
@@ -688,7 +759,7 @@ double [] treat = new double[10];
                             .addComponent(jLabel34, javax.swing.GroupLayout.Alignment.TRAILING)))
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addComponent(jChxBost)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 120, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 130, Short.MAX_VALUE)
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel32)
                             .addComponent(jLabel33)))
@@ -749,7 +820,7 @@ double [] treat = new double[10];
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 350, 640, 270));
+        getContentPane().add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 350, 650, 270));
         getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
         getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
@@ -795,10 +866,12 @@ double [] treat = new double[10];
         treat[2] = Double.parseDouble(jTxtCheez.getText());
         treat[3] = Double.parseDouble(jTxtCoffCake.getText());
         treat[4] = Double.parseDouble(jTxtCrois.getText());
+        //cost
+        cost[0] = Double.parseDouble(jLabelTax.getText());
+        cost[1] = Double.parseDouble(jLabelSubT.getText());
+        cost[2] = Double.parseDouble(jLabelTotal.getText());
         //ref
-        int refs;
-        refs = 1355 + (int) (Math.random()* 4238);
-        int ref = (refs);
+        int refs = 1355 + (int) (Math.random()* 4238);
         //calendar info
             Calendar timer = Calendar.getInstance();
             timer.getTime();
@@ -808,9 +881,10 @@ double [] treat = new double[10];
             tDate.format(timer.getTime());
         //receipt
         jTxtReceipt.append(
-                "\t\n Java Cafe System:\n\n" +
-                "\n Reference:\t\t\t" + ref +
-                "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \t" +
+                "\n\tJava Stop Cafe \n" +
+                "\n Reference: #" + refs +
+                "\n ~~~~~~~~~~~~~~~~~~~~~~~~ " +
+                        "\nItem\tPrice            Quantity" +
                 "\nAffogato:\t\t" + drink[0] + 
                 "\nAmericano:\t\t" + drink[1] +
                 "\nBreve:\t\t" + drink[2] +
@@ -821,13 +895,19 @@ double [] treat = new double[10];
                 "\nMacc:\t\t" + drink[7] +
                 "\nRistretto:\t\t" + drink[8] +
                 "\nPanna:\t\t" + drink[9] +
-                "\n ---------------------------------------------------\t\t" + 
+                "\n --------------------------------------\n" +
+                        "\nItem\tPrice            Quantity" +
                         "\nTreats:\t\t\t\t" + 
                         "\nBoston Cream Pie:\t" + treat[0] +
                         "\nCake Pop:\t\t" + treat[1]+
                         "\nCheesecake:\t\t" + treat[2] +
                         "\nCoffee Cake:\t\t" + treat[3] + 
                         "\nCroissant:\t\t" + treat[4] + 
+                        "\n --------------------------------------\n" +
+                        "\nTax: " + cost[0] +
+                        "\nSubtotal: " + cost[1] +
+                        "\nTotal: " + cost[2] +
+                        "\n --------------------------------------\n" +
                         "\nDate:" + tDate.format(timer.getTime()) + 
                         "\nTime " + tTime.format(timer.getTime()) +
                         "\n\nThank you!");
@@ -873,22 +953,25 @@ double [] treat = new double[10];
         jChxCrois.setSelected(false);
         //Text boxes (Txt)
         jTxtReceipt.setText(null);
-        jTxtAffogato.setText(null);
-        jTxtAmer.setText(null);
-        jTxtBreve.setText(null);
-        jTxtCappu.setText(null);
-        jTxtDoppio.setText(null);
-        jTxtEspress.setText(null);
-        jTxtLatte.setText(null);
-        jTxtMacc.setText(null);
-        jTxtPanna.setText(null);
-        jTxtRistretto.setText(null);
-        jTxtBost.setText(null);
-        jTxtCheez.setText(null);
-        jTxtCoffCake.setText(null);
-        jTxtCpop.setText(null);
-        jTxtCrois.setText(null);
-        
+        jTxtAffogato.setText("0");
+        jTxtAmer.setText("0");
+        jTxtBreve.setText("0");
+        jTxtCappu.setText("0");
+        jTxtDoppio.setText("0");
+        jTxtEspress.setText("0");
+        jTxtLatte.setText("0");
+        jTxtMacc.setText("0");
+        jTxtPanna.setText("0");
+        jTxtRistretto.setText("0");
+        jTxtBost.setText("0");
+        jTxtCheez.setText("0");
+        jTxtCoffCake.setText("0");
+        jTxtCpop.setText("0");
+        jTxtCrois.setText("0");
+        //label for cost + totals
+        jLabelTax.setText(null);
+        jLabelSubT.setText(null);
+        jLabelTotal.setText(null);
         
     }//GEN-LAST:event_jBtnResetActionPerformed
 
@@ -947,6 +1030,9 @@ double [] treat = new double[10];
     private javax.swing.JCheckBox jChxMacc;
     private javax.swing.JCheckBox jChxPanna;
     private javax.swing.JCheckBox jChxRistretto;
+    private javax.swing.JEditorPane jEditorPane1;
+    private javax.swing.JEditorPane jEditorPane2;
+    private javax.swing.JEditorPane jEditorPane3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -976,9 +1062,12 @@ double [] treat = new double[10];
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabelDrinks;
     private javax.swing.JLabel jLabelServChrg;
-    private javax.swing.JLabel jLabelSubT;
-    private javax.swing.JLabel jLabelTax;
-    private javax.swing.JLabel jLabelTotal;
+    private javax.swing.JEditorPane jLabelSubT;
+    private javax.swing.JLabel jLabelSubTote;
+    private javax.swing.JEditorPane jLabelTax;
+    private javax.swing.JLabel jLabelTaxes;
+    private javax.swing.JEditorPane jLabelTotal;
+    private javax.swing.JLabel jLabelTotale;
     private javax.swing.JLabel jLabelTreats;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -998,11 +1087,17 @@ double [] treat = new double[10];
     private javax.swing.JScrollPane jScrollPane17;
     private javax.swing.JScrollPane jScrollPane18;
     private javax.swing.JScrollPane jScrollPane19;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane20;
     private javax.swing.JScrollPane jScrollPane21;
+    private javax.swing.JScrollPane jScrollPane22;
+    private javax.swing.JScrollPane jScrollPane23;
+    private javax.swing.JScrollPane jScrollPane24;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JEditorPane jTxtAffogato;
     private javax.swing.JEditorPane jTxtAmer;
     private javax.swing.JEditorPane jTxtBost;
