@@ -16,7 +16,9 @@ import java.util.Random;
 public class Cafe_Management_System extends javax.swing.JFrame {
 double [] drink = new double[12];
 double [] treat = new double[10];
-double [] cost = new double[3];
+String [] cost = new String[3];
+double [] i = new double[12];
+
     /**
      * Creates new form Cafe_Management_System
      */
@@ -101,12 +103,9 @@ double [] cost = new double[3];
         jLabelDrinks = new javax.swing.JLabel();
         jLabelTreats = new javax.swing.JLabel();
         jLabelServChrg = new javax.swing.JLabel();
-        jScrollPane25 = new javax.swing.JScrollPane();
-        jTxtServCharge = new javax.swing.JEditorPane();
-        jScrollPane26 = new javax.swing.JScrollPane();
-        jTxtCostOfDrinks = new javax.swing.JEditorPane();
-        jScrollPane27 = new javax.swing.JScrollPane();
-        jTxtCostTreats = new javax.swing.JEditorPane();
+        jLabelCostDrink = new javax.swing.JLabel();
+        jTxtCostTreats = new javax.swing.JLabel();
+        jTxtServCharge = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jChxCrois = new javax.swing.JCheckBox();
         jChxCheez = new javax.swing.JCheckBox();
@@ -133,15 +132,7 @@ double [] cost = new double[3];
         jTxtCrois = new javax.swing.JEditorPane();
         jLabel28 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -525,31 +516,28 @@ double [] cost = new double[3];
                     .addComponent(jLabelTaxes)
                     .addComponent(jLabelSubTote)
                     .addComponent(jLabelTotale))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabelTotal, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                    .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabelSubT, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                        .addComponent(jLabelTax, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(jLabelSubT, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
+                    .addComponent(jLabelTotal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabelTax, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(24, Short.MAX_VALUE)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jLabelTaxes)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabelSubTote))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(jLabelTax)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabelSubT)))
+                .addContainerGap(21, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelTax)
+                    .addComponent(jLabelTaxes))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelTotale)
-                    .addComponent(jLabelTotal))
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelSubT)
+                    .addComponent(jLabelSubTote))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelTotal)
+                    .addComponent(jLabelTotale))
                 .addGap(27, 27, 27))
         );
 
@@ -629,53 +617,63 @@ double [] cost = new double[3];
         jLabelServChrg.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabelServChrg.setText("Service Charge");
 
-        jTxtServCharge.setBorder(javax.swing.BorderFactory.createLineBorder(null));
-        jTxtServCharge.setText("0");
-        jScrollPane25.setViewportView(jTxtServCharge);
+        jLabelCostDrink.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelCostDrink.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabelCostDrink.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelCostDrink.setText("0");
+        jLabelCostDrink.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabelCostDrink.setOpaque(true);
 
-        jTxtCostOfDrinks.setBorder(javax.swing.BorderFactory.createLineBorder(null));
-        jTxtCostOfDrinks.setText("0");
-        jScrollPane26.setViewportView(jTxtCostOfDrinks);
-
-        jTxtCostTreats.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtCostTreats.setBackground(new java.awt.Color(255, 255, 255));
+        jTxtCostTreats.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jTxtCostTreats.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jTxtCostTreats.setText("0");
-        jScrollPane27.setViewportView(jTxtCostTreats);
+        jTxtCostTreats.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtCostTreats.setOpaque(true);
+
+        jTxtServCharge.setBackground(new java.awt.Color(255, 255, 255));
+        jTxtServCharge.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jTxtServCharge.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jTxtServCharge.setText("0");
+        jTxtServCharge.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtServCharge.setOpaque(true);
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelDrinks)
                     .addComponent(jLabelTreats)
                     .addComponent(jLabelServChrg))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(14, 14, 14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jLabelCostDrink, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
+                    .addComponent(jTxtCostTreats, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jTxtServCharge, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(39, 39, 39)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                .addContainerGap(33, Short.MAX_VALUE)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(jScrollPane26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabelCostDrink)
+                        .addGap(42, 42, 42))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabelDrinks)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabelTreats)))
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabelTreats)
+                            .addComponent(jTxtCostTreats))))
                 .addGap(19, 19, 19)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelServChrg, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(26, Short.MAX_VALUE))
+                    .addComponent(jTxtServCharge)
+                    .addComponent(jLabelServChrg))
+                .addGap(20, 20, 20))
         );
 
         getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 620, 320, 170));
@@ -834,32 +832,8 @@ double [] cost = new double[3];
         getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
         getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel4.setText("0 Affo");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 80, -1, -1));
-
-        jLabel5.setText("0 Cappu");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 80, -1, -1));
-
-        jLabel6.setText("jLabel6");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 80, -1, -1));
-
-        jLabel10.setText("jLabel10");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 80, -1, -1));
-
         jLabel11.setText("jLabel11");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 80, -1, -1));
-
-        jLabel12.setText("0 Americ");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 60, -1, -1));
-
-        jLabel26.setText("0 Breve");
-        getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 60, -1, -1));
-
-        jLabel27.setText("jLabel27");
-        getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 60, -1, -1));
-
-        jLabel29.setText("jLabel29");
-        getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 60, -1, -1));
 
         jLabel31.setText("jLabel31");
         getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 60, -1, -1));
@@ -868,11 +842,31 @@ double [] cost = new double[3];
     }// </editor-fold>//GEN-END:initComponents
 
     private void jChxAffogatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxAffogatoActionPerformed
-        // TODO add your handling code here:
+        // TODO add cost of item here:
+        double cAff = Double.parseDouble(jLabelCostDrink.getText());
+        double Affogato = Double.parseDouble(jTxtAffogato.getText());
+        double iAffo = 2.0;
+        
+        if (jChxAffogato.isSelected()){
+            i[0] = (Affogato * iAffo)+ cAff;
+            String pDrink = String.format("%.2f", i[0]);
+            jLabelCostDrink.setText(pDrink);
+            jTxtAffogato.setText(pDrink);
+        }
     }//GEN-LAST:event_jChxAffogatoActionPerformed
 
     private void jChxAmerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxAmerActionPerformed
-        // TODO add your handling code here:
+        // TODO add cost of item here:
+        double cAmericano = Double.parseDouble(jLabelCostDrink.getText());
+        double Americano = Double.parseDouble(jTxtAmer.getText());
+        double iAmericano = 2.50;
+        
+        if (jChxAmer.isSelected()){
+            i[1] = (Americano * iAmericano)+ cAmericano;
+            String pDrink = String.format("%.2f", i[1]);
+            jLabelCostDrink.setText(pDrink);
+            jTxtAmer.setText(pDrink);
+        }
     }//GEN-LAST:event_jChxAmerActionPerformed
 
     private void jChxCappuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxCappuActionPerformed
@@ -907,9 +901,9 @@ double [] cost = new double[3];
         treat[3] = Double.parseDouble(jTxtCoffCake.getText());
         treat[4] = Double.parseDouble(jTxtCrois.getText());
         //cost
-        cost[0] = Double.parseDouble(jLabelTax.getText());
-        cost[1] = Double.parseDouble(jLabelSubT.getText());
-        cost[2] = Double.parseDouble(jLabelTotal.getText());
+        cost[0] = jLabelTax.getText();
+        cost[1] = jLabelSubT.getText();
+        cost[2] = jLabelTotal.getText();
         //ref
         int refs = 1355 + (int) (Math.random()* 4238);
         //calendar info
@@ -1012,6 +1006,10 @@ double [] cost = new double[3];
         jLabelTax.setText(null);
         jLabelSubT.setText(null);
         jLabelTotal.setText(null);
+        //Cost of items
+        jLabelCostDrink.setText(null);
+        jTxtCostTreats.setText(null);
+        jTxtServCharge.setText(null);
         
     }//GEN-LAST:event_jBtnResetActionPerformed
 
@@ -1071,9 +1069,7 @@ double [] cost = new double[3];
     private javax.swing.JCheckBox jChxPanna;
     private javax.swing.JCheckBox jChxRistretto;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
@@ -1088,10 +1084,7 @@ double [] cost = new double[3];
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
@@ -1101,12 +1094,10 @@ double [] cost = new double[3];
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelCostDrink;
     private javax.swing.JLabel jLabelDrinks;
     private javax.swing.JLabel jLabelServChrg;
     private javax.swing.JLabel jLabelSubT;
@@ -1136,9 +1127,6 @@ double [] cost = new double[3];
     private javax.swing.JScrollPane jScrollPane19;
     private javax.swing.JScrollPane jScrollPane20;
     private javax.swing.JScrollPane jScrollPane21;
-    private javax.swing.JScrollPane jScrollPane25;
-    private javax.swing.JScrollPane jScrollPane26;
-    private javax.swing.JScrollPane jScrollPane27;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
@@ -1149,8 +1137,7 @@ double [] cost = new double[3];
     private javax.swing.JEditorPane jTxtCappu;
     private javax.swing.JEditorPane jTxtCheez;
     private javax.swing.JEditorPane jTxtCoffCake;
-    private javax.swing.JEditorPane jTxtCostOfDrinks;
-    private javax.swing.JEditorPane jTxtCostTreats;
+    private javax.swing.JLabel jTxtCostTreats;
     private javax.swing.JEditorPane jTxtCpop;
     private javax.swing.JEditorPane jTxtCrois;
     private javax.swing.JEditorPane jTxtDoppio;
@@ -1160,6 +1147,6 @@ double [] cost = new double[3];
     private javax.swing.JEditorPane jTxtPanna;
     private javax.swing.JTextArea jTxtReceipt;
     private javax.swing.JEditorPane jTxtRistretto;
-    private javax.swing.JEditorPane jTxtServCharge;
+    private javax.swing.JLabel jTxtServCharge;
     // End of variables declaration//GEN-END:variables
 }
