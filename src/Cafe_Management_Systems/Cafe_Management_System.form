@@ -108,7 +108,7 @@
                                   <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jScrollPane12" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane12" min="-2" pref="115" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -246,6 +246,11 @@
           <SubComponents>
             <Component class="javax.swing.JEditorPane" name="jTxtBreve">
               <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder/>
+                  </Border>
+                </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
@@ -260,6 +265,11 @@
           <SubComponents>
             <Component class="javax.swing.JEditorPane" name="jTxtAffogato">
               <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder/>
+                  </Border>
+                </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
@@ -274,6 +284,11 @@
           <SubComponents>
             <Component class="javax.swing.JEditorPane" name="jTxtAmer">
               <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder/>
+                  </Border>
+                </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
@@ -288,6 +303,11 @@
           <SubComponents>
             <Component class="javax.swing.JEditorPane" name="jTxtCappu">
               <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder/>
+                  </Border>
+                </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
@@ -302,6 +322,11 @@
           <SubComponents>
             <Component class="javax.swing.JEditorPane" name="jTxtDoppio">
               <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder/>
+                  </Border>
+                </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
@@ -397,8 +422,8 @@
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                               <Component id="jScrollPane15" min="-2" max="-2" attributes="0"/>
@@ -412,13 +437,15 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jScrollPane13" alignment="1" min="-2" max="-2" attributes="0"/>
                                   <Component id="jScrollPane14" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jScrollPane16" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
-                      <Group type="102" alignment="1" attributes="0">
+                      <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
-                          <Component id="jScrollPane17" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jScrollPane16" alignment="1" max="32767" attributes="0"/>
+                              <Component id="jScrollPane17" alignment="1" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -494,6 +521,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Espresso"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jChxEspressActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="jChxLatte">
           <Properties>
@@ -502,6 +532,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Latte"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jChxLatteActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="jChxMacc">
           <Properties>
@@ -510,6 +543,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Macchiato"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jChxMaccActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="jChxRistretto">
           <Properties>
@@ -529,6 +565,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Panna"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jChxPannaActionPerformed"/>
+          </Events>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane13">
           <AuxValues>
@@ -539,6 +578,11 @@
           <SubComponents>
             <Component class="javax.swing.JEditorPane" name="jTxtEspress">
               <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder/>
+                  </Border>
+                </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
@@ -553,6 +597,11 @@
           <SubComponents>
             <Component class="javax.swing.JEditorPane" name="jTxtLatte">
               <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder/>
+                  </Border>
+                </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
@@ -567,6 +616,11 @@
           <SubComponents>
             <Component class="javax.swing.JEditorPane" name="jTxtMacc">
               <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder/>
+                  </Border>
+                </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
@@ -581,6 +635,11 @@
           <SubComponents>
             <Component class="javax.swing.JEditorPane" name="jTxtRistretto">
               <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder/>
+                  </Border>
+                </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
@@ -595,6 +654,11 @@
           <SubComponents>
             <Component class="javax.swing.JEditorPane" name="jTxtPanna">
               <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder/>
+                  </Border>
+                </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
@@ -725,7 +789,7 @@
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="jLabelSubT" alignment="1" pref="125" max="32767" attributes="0"/>
                       <Component id="jLabelTotal" alignment="1" max="32767" attributes="0"/>
-                      <Component id="jLabelTax" max="32767" attributes="0"/>
+                      <Component id="jLabelTax" alignment="1" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -1127,12 +1191,12 @@
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="jScrollPane4" min="-2" max="-2" attributes="0"/>
-                      <Component id="jScrollPane18" min="-2" max="-2" attributes="0"/>
-                      <Component id="jScrollPane19" min="-2" max="-2" attributes="0"/>
-                      <Component id="jScrollPane20" min="-2" max="-2" attributes="0"/>
-                      <Component id="jScrollPane21" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="jScrollPane18" max="32767" attributes="0"/>
+                      <Component id="jScrollPane19" max="32767" attributes="0"/>
+                      <Component id="jScrollPane20" max="32767" attributes="0"/>
+                      <Component id="jScrollPane21" max="32767" attributes="0"/>
+                      <Component id="jScrollPane4" alignment="1" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
               </Group>
@@ -1206,6 +1270,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Croissant"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jChxCroisActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="jChxCheez">
           <Properties>
@@ -1214,6 +1281,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Cheesecake"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jChxCheezActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="jChxBost">
           <Properties>
@@ -1244,6 +1314,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Cake Pop"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jChxCpopActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel14">
           <Properties>

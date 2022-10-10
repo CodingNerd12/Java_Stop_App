@@ -185,18 +185,23 @@ double [] i = new double[12];
             }
         });
 
+        jTxtBreve.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtBreve.setText("0");
         jScrollPane5.setViewportView(jTxtBreve);
 
+        jTxtAffogato.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtAffogato.setText("0");
         jScrollPane6.setViewportView(jTxtAffogato);
 
+        jTxtAmer.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtAmer.setText("0");
         jScrollPane10.setViewportView(jTxtAmer);
 
+        jTxtCappu.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtCappu.setText("0");
         jScrollPane11.setViewportView(jTxtCappu);
 
+        jTxtDoppio.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtDoppio.setText("0");
         jScrollPane12.setViewportView(jTxtDoppio);
 
@@ -258,7 +263,7 @@ double [] i = new double[12];
                                 .addComponent(jLabel2)
                                 .addGap(42, 42, 42))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addContainerGap())))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -311,12 +316,27 @@ double [] i = new double[12];
 
         jChxEspress.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxEspress.setText("Espresso");
+        jChxEspress.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jChxEspressActionPerformed(evt);
+            }
+        });
 
         jChxLatte.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxLatte.setText("Latte");
+        jChxLatte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jChxLatteActionPerformed(evt);
+            }
+        });
 
         jChxMacc.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxMacc.setText("Macchiato");
+        jChxMacc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jChxMaccActionPerformed(evt);
+            }
+        });
 
         jChxRistretto.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxRistretto.setText("Ristretto");
@@ -328,19 +348,29 @@ double [] i = new double[12];
 
         jChxPanna.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxPanna.setText("Panna");
+        jChxPanna.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jChxPannaActionPerformed(evt);
+            }
+        });
 
+        jTxtEspress.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtEspress.setText("0");
         jScrollPane13.setViewportView(jTxtEspress);
 
+        jTxtLatte.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtLatte.setText("0");
         jScrollPane14.setViewportView(jTxtLatte);
 
+        jTxtMacc.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtMacc.setText("0");
         jScrollPane15.setViewportView(jTxtMacc);
 
+        jTxtRistretto.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtRistretto.setText("0");
         jScrollPane16.setViewportView(jTxtRistretto);
 
+        jTxtPanna.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtPanna.setText("0");
         jScrollPane17.setViewportView(jTxtPanna);
 
@@ -388,8 +418,8 @@ double [] i = new double[12];
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel21)
                                 .addComponent(jLabel20)))))
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel2Layout.createSequentialGroup()
                             .addGap(62, 62, 62)
                             .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -400,11 +430,12 @@ double [] i = new double[12];
                             .addGap(62, 62, 62)
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jScrollPane13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jScrollPane14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jScrollPane16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addComponent(jScrollPane14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(62, 62, 62)
-                        .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jScrollPane16, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jScrollPane17, javax.swing.GroupLayout.Alignment.TRAILING))))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -528,7 +559,7 @@ double [] i = new double[12];
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabelSubT, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
                     .addComponent(jLabelTotal, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabelTax, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabelTax, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -690,9 +721,19 @@ double [] i = new double[12];
 
         jChxCrois.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxCrois.setText("Croissant");
+        jChxCrois.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jChxCroisActionPerformed(evt);
+            }
+        });
 
         jChxCheez.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxCheez.setText("Cheesecake");
+        jChxCheez.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jChxCheezActionPerformed(evt);
+            }
+        });
 
         jChxBost.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxBost.setText("Boston Cream Pie");
@@ -712,6 +753,11 @@ double [] i = new double[12];
 
         jChxCpop.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxCpop.setText("Cake Pop");
+        jChxCpop.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jChxCpopActionPerformed(evt);
+            }
+        });
 
         jLabel14.setText("Quantity");
 
@@ -784,12 +830,12 @@ double [] i = new double[12];
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel36)))
                 .addGap(109, 109, 109)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jScrollPane18)
+                    .addComponent(jScrollPane19)
+                    .addComponent(jScrollPane20)
+                    .addComponent(jScrollPane21)
+                    .addComponent(jScrollPane4))
                 .addGap(100, 100, 100))
         );
         jPanel9Layout.setVerticalGroup(
@@ -874,12 +920,12 @@ double [] i = new double[12];
     private void jChxCappuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxCappuActionPerformed
         // TODO add cost of item:
         double cCappu = Double.parseDouble(jLabelCostDrink.getText());
-        double Cappuccino = Double.parseDouble(jTxtCappu.getText());
+        double Cappucino = Double.parseDouble(jTxtCappu.getText());
         double iCappu = 1.0;
         
         if (jChxCappu.isSelected()){
-            i[0] = (Cappuccino * iCappu)+ cCappu;
-            String pDrink = String.format("%.2f", i[0]);
+            i[3] = (Cappucino * iCappu)+ cCappu;
+            String pDrink = String.format("%.2f", i[3]);
             jLabelCostDrink.setText(pDrink);
             jTxtCappu.setText(pDrink);
         }
@@ -887,6 +933,16 @@ double [] i = new double[12];
 
     private void jChxRistrettoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxRistrettoActionPerformed
         // TODO add your handling code here:
+        double cRistretto = Double.parseDouble(jLabelCostDrink.getText());
+        double Ristretto = Double.parseDouble(jTxtRistretto.getText());
+        double iRistretto = 5.0;
+        
+        if (jChxRistretto.isSelected()){
+            i[8] = (Ristretto * iRistretto)+ cRistretto;
+            String pDrink = String.format("%.2f", i[8]);
+            jLabelCostDrink.setText(pDrink);
+            jTxtRistretto.setText(pDrink);
+        }
     }//GEN-LAST:event_jChxRistrettoActionPerformed
 
     private void jBtnTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnTotalActionPerformed
@@ -966,10 +1022,30 @@ double [] i = new double[12];
 
     private void jChxCoffCakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxCoffCakeActionPerformed
         // TODO add your handling code here:
+        double cCoffCake = Double.parseDouble(jTxtCostTreats.getText());
+        double CoffeeCake = Double.parseDouble(jTxtCoffCake.getText());
+        double iCoffCake = 2.0;
+        
+        if (jChxCoffCake.isSelected()){
+            i[3] = (CoffeeCake * iCoffCake)+ cCoffCake;
+            String pTreat = String.format("%.2f", i[3]);
+            jTxtCostTreats.setText(pTreat);
+            jTxtCoffCake.setText(pTreat);
+        }
     }//GEN-LAST:event_jChxCoffCakeActionPerformed
 
     private void jChxBostActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxBostActionPerformed
         // TODO add your handling code here:
+        double cBost = Double.parseDouble(jTxtCostTreats.getText());
+        double BostonCream = Double.parseDouble(jTxtBost.getText());
+        double iBost = 3.0;
+        
+        if (jChxBost.isSelected()){
+            i[0] = (BostonCream * iBost)+ cBost;
+            String pTreat = String.format("%.2f", i[0]);
+            jTxtCostTreats.setText(pTreat);
+            jTxtBost.setText(pTreat);
+        }
     }//GEN-LAST:event_jChxBostActionPerformed
 
     private void jBtnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnResetActionPerformed
@@ -1032,8 +1108,8 @@ double [] i = new double[12];
         double iBreve = 2.0;
         
         if (jChxBreve.isSelected()){
-            i[0] = (Breve * iBreve)+ cBreve;
-            String pDrink = String.format("%.2f", i[0]);
+            i[2] = (Breve * iBreve)+ cBreve;
+            String pDrink = String.format("%.2f", i[2]);
             jLabelCostDrink.setText(pDrink);
             jTxtBreve.setText(pDrink);
         }
@@ -1046,12 +1122,110 @@ double [] i = new double[12];
         double iDoppio = 2.0;
         
         if (jChxDoppio.isSelected()){
-            i[0] = (Doppio * iDoppio)+ cDoppio;
-            String pDrink = String.format("%.2f", i[0]);
+            i[4] = (Doppio * iDoppio)+ cDoppio;
+            String pDrink = String.format("%.2f", i[4]);
             jLabelCostDrink.setText(pDrink);
             jTxtDoppio.setText(pDrink);
         }
     }//GEN-LAST:event_jChxDoppioActionPerformed
+
+    private void jChxEspressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxEspressActionPerformed
+        // TODO add cost of item here:
+        double cEspresso = Double.parseDouble(jLabelCostDrink.getText());
+        double Espress = Double.parseDouble(jTxtEspress.getText());
+        double iEspress = 0.90;
+        
+        if (jChxEspress.isSelected()){
+            i[5] = (Espress * iEspress)+ cEspresso;
+            String pDrink = String.format("%.2f", i[5]);
+            jLabelCostDrink.setText(pDrink);
+            jTxtEspress.setText(pDrink);
+        }
+    }//GEN-LAST:event_jChxEspressActionPerformed
+
+    private void jChxLatteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxLatteActionPerformed
+        // TODO add cost of item here:
+        double cLatte = Double.parseDouble(jLabelCostDrink.getText());
+        double Latte = Double.parseDouble(jTxtLatte.getText());
+        double iLatte = 2.0;
+        
+        if (jChxLatte.isSelected()){
+            i[6] = (Latte * iLatte)+ cLatte;
+            String pDrink = String.format("%.2f", i[6]);
+            jLabelCostDrink.setText(pDrink);
+            jTxtLatte.setText(pDrink);
+        }
+    }//GEN-LAST:event_jChxLatteActionPerformed
+
+    private void jChxMaccActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxMaccActionPerformed
+        // TODO add cost of item here:
+        double cMacc = Double.parseDouble(jLabelCostDrink.getText());
+        double Macchiato = Double.parseDouble(jTxtLatte.getText());
+        double iMacc = 2.0;
+        
+        if (jChxMacc.isSelected()){
+            i[7] = (Macchiato * iMacc)+ cMacc;
+            String pDrink = String.format("%.2f", i[7]);
+            jLabelCostDrink.setText(pDrink);
+            jTxtMacc.setText(pDrink);
+        }
+    }//GEN-LAST:event_jChxMaccActionPerformed
+
+    private void jChxPannaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxPannaActionPerformed
+        // TODO add your handling code here:
+        double cPanna = Double.parseDouble(jLabelCostDrink.getText());
+        double Panna = Double.parseDouble(jTxtPanna.getText());
+        double iPanna = 4.0;
+        
+        if (jChxPanna.isSelected()){
+            i[9] = (Panna * iPanna)+ cPanna;
+            String pDrink = String.format("%.2f", i[9]);
+            jLabelCostDrink.setText(pDrink);
+            jTxtPanna.setText(pDrink);
+        }
+    }//GEN-LAST:event_jChxPannaActionPerformed
+
+    private void jChxCpopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxCpopActionPerformed
+        // TODO add your handling code here:
+        double cCakepop = Double.parseDouble(jTxtCostTreats.getText());
+        double Cpop = Double.parseDouble(jTxtCpop.getText());
+        double iCpop = 1.5;
+        
+        if (jChxCpop.isSelected()){
+            i[1] = (Cpop * iCpop)+ cCakepop;
+            String pTreat = String.format("%.2f", i[1]);
+            jTxtCostTreats.setText(pTreat);
+            jTxtCpop.setText(pTreat);
+        }
+    }//GEN-LAST:event_jChxCpopActionPerformed
+
+    private void jChxCheezActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxCheezActionPerformed
+        // TODO add your handling code here:
+        double cCheeze = Double.parseDouble(jTxtCostTreats.getText());
+        double CheeseCake = Double.parseDouble(jTxtCheez.getText());
+        double iCheeze = 1.5;
+        
+        if (jChxCheez.isSelected()){
+            i[2] = (CheeseCake * iCheeze)+ cCheeze;
+            String pTreat = String.format("%.2f", i[2]);
+            jTxtCostTreats.setText(pTreat);
+            jTxtCheez.setText(pTreat);
+        }
+    }//GEN-LAST:event_jChxCheezActionPerformed
+
+    private void jChxCroisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxCroisActionPerformed
+        // TODO add your handling code here:
+        double cCrois = Double.parseDouble(jTxtCostTreats.getText());
+        double Crois = Double.parseDouble(jTxtCrois.getText());
+        double iCrois = 1.0;
+        
+        if (jChxCrois.isSelected()){
+            i[4] = (Crois * iCrois)+ cCrois;
+            String pTreat = String.format("%.2f", i[4]);
+            jTxtCostTreats.setText(pTreat);
+            jTxtCrois.setText(pTreat);
+        }
+    }//GEN-LAST:event_jChxCroisActionPerformed
 
     /**
      * @param args the command line arguments
