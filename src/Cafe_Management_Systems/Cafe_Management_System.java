@@ -132,8 +132,6 @@ double [] i = new double[12];
         jTxtCrois = new javax.swing.JEditorPane();
         jLabel28 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -165,6 +163,11 @@ double [] i = new double[12];
 
         jChxBreve.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxBreve.setText("Breve");
+        jChxBreve.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jChxBreveActionPerformed(evt);
+            }
+        });
 
         jChxCappu.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxCappu.setText("Cappucino");
@@ -176,6 +179,11 @@ double [] i = new double[12];
 
         jChxDoppio.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxDoppio.setText("Doppio");
+        jChxDoppio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jChxDoppioActionPerformed(evt);
+            }
+        });
 
         jTxtBreve.setText("0");
         jScrollPane5.setViewportView(jTxtBreve);
@@ -443,10 +451,10 @@ double [] i = new double[12];
                         .addComponent(jChxPanna)
                         .addComponent(jLabel25))
                     .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, 380, 210));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, 380, 220));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(null));
 
@@ -832,12 +840,6 @@ double [] i = new double[12];
         getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
         getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel11.setText("jLabel11");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 80, -1, -1));
-
-        jLabel31.setText("jLabel31");
-        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 60, -1, -1));
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -870,7 +872,17 @@ double [] i = new double[12];
     }//GEN-LAST:event_jChxAmerActionPerformed
 
     private void jChxCappuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxCappuActionPerformed
-        // TODO add your handling code here:
+        // TODO add cost of item:
+        double cCappu = Double.parseDouble(jLabelCostDrink.getText());
+        double Cappuccino = Double.parseDouble(jTxtCappu.getText());
+        double iCappu = 1.0;
+        
+        if (jChxCappu.isSelected()){
+            i[0] = (Cappuccino * iCappu)+ cCappu;
+            String pDrink = String.format("%.2f", i[0]);
+            jLabelCostDrink.setText(pDrink);
+            jTxtCappu.setText(pDrink);
+        }
     }//GEN-LAST:event_jChxCappuActionPerformed
 
     private void jChxRistrettoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxRistrettoActionPerformed
@@ -1003,15 +1015,43 @@ double [] i = new double[12];
         jTxtCpop.setText("0");
         jTxtCrois.setText("0");
         //label for cost + totals
-        jLabelTax.setText(null);
-        jLabelSubT.setText(null);
-        jLabelTotal.setText(null);
+        jLabelTax.setText("0");
+        jLabelSubT.setText("0");
+        jLabelTotal.setText("0");
         //Cost of items
-        jLabelCostDrink.setText(null);
-        jTxtCostTreats.setText(null);
-        jTxtServCharge.setText(null);
+        jLabelCostDrink.setText("0");
+        jTxtCostTreats.setText("0");
+        jTxtServCharge.setText("0");
         
     }//GEN-LAST:event_jBtnResetActionPerformed
+
+    private void jChxBreveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxBreveActionPerformed
+        // TODO add cost of item here:
+        double cBreve = Double.parseDouble(jLabelCostDrink.getText());
+        double Breve = Double.parseDouble(jTxtBreve.getText());
+        double iBreve = 2.0;
+        
+        if (jChxBreve.isSelected()){
+            i[0] = (Breve * iBreve)+ cBreve;
+            String pDrink = String.format("%.2f", i[0]);
+            jLabelCostDrink.setText(pDrink);
+            jTxtBreve.setText(pDrink);
+        }
+    }//GEN-LAST:event_jChxBreveActionPerformed
+
+    private void jChxDoppioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxDoppioActionPerformed
+        // TODO add cost of item here:
+        double cDoppio = Double.parseDouble(jLabelCostDrink.getText());
+        double Doppio = Double.parseDouble(jTxtDoppio.getText());
+        double iDoppio = 2.0;
+        
+        if (jChxDoppio.isSelected()){
+            i[0] = (Doppio * iDoppio)+ cDoppio;
+            String pDrink = String.format("%.2f", i[0]);
+            jLabelCostDrink.setText(pDrink);
+            jTxtDoppio.setText(pDrink);
+        }
+    }//GEN-LAST:event_jChxDoppioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1069,7 +1109,6 @@ double [] i = new double[12];
     private javax.swing.JCheckBox jChxPanna;
     private javax.swing.JCheckBox jChxRistretto;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
@@ -1087,7 +1126,6 @@ double [] i = new double[12];
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
