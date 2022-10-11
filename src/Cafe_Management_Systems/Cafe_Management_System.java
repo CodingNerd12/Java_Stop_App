@@ -899,7 +899,7 @@ double [] i = new double[12];
             i[0] = (Affogato * iAffo)+ cAff;
             String pDrink = String.format("%.2f", i[0]);
             jLabelCostDrink.setText(pDrink);
-            jTxtAffogato.setText(pDrink);
+            //jTxtAffogato.setText(pDrink);
         }
     }//GEN-LAST:event_jChxAffogatoActionPerformed
 
@@ -913,7 +913,7 @@ double [] i = new double[12];
             i[1] = (Americano * iAmericano)+ cAmericano;
             String pDrink = String.format("%.2f", i[1]);
             jLabelCostDrink.setText(pDrink);
-            jTxtAmer.setText(pDrink);
+            //jTxtAmer.setText(pDrink);
         }
     }//GEN-LAST:event_jChxAmerActionPerformed
 
@@ -927,7 +927,7 @@ double [] i = new double[12];
             i[3] = (Cappucino * iCappu)+ cCappu;
             String pDrink = String.format("%.2f", i[3]);
             jLabelCostDrink.setText(pDrink);
-            jTxtCappu.setText(pDrink);
+           // jTxtCappu.setText(pDrink);
         }
     }//GEN-LAST:event_jChxCappuActionPerformed
 
@@ -941,7 +941,7 @@ double [] i = new double[12];
             i[8] = (Ristretto * iRistretto)+ cRistretto;
             String pDrink = String.format("%.2f", i[8]);
             jLabelCostDrink.setText(pDrink);
-            jTxtRistretto.setText(pDrink);
+            //jTxtRistretto.setText(pDrink);
         }
     }//GEN-LAST:event_jChxRistrettoActionPerformed
 
@@ -1030,7 +1030,7 @@ double [] i = new double[12];
             i[3] = (CoffeeCake * iCoffCake)+ cCoffCake;
             String pTreat = String.format("%.2f", i[3]);
             jTxtCostTreats.setText(pTreat);
-            jTxtCoffCake.setText(pTreat);
+            //jTxtCoffCake.setText(pTreat);
         }
     }//GEN-LAST:event_jChxCoffCakeActionPerformed
 
@@ -1044,7 +1044,7 @@ double [] i = new double[12];
             i[0] = (BostonCream * iBost)+ cBost;
             String pTreat = String.format("%.2f", i[0]);
             jTxtCostTreats.setText(pTreat);
-            jTxtBost.setText(pTreat);
+            //jTxtBost.setText(pTreat);
         }
     }//GEN-LAST:event_jChxBostActionPerformed
 
@@ -1111,7 +1111,7 @@ double [] i = new double[12];
             i[2] = (Breve * iBreve)+ cBreve;
             String pDrink = String.format("%.2f", i[2]);
             jLabelCostDrink.setText(pDrink);
-            jTxtBreve.setText(pDrink);
+            //jTxtBreve.setText(pDrink);
         }
     }//GEN-LAST:event_jChxBreveActionPerformed
 
@@ -1119,13 +1119,13 @@ double [] i = new double[12];
         // TODO add cost of item here:
         double cDoppio = Double.parseDouble(jLabelCostDrink.getText());
         double Doppio = Double.parseDouble(jTxtDoppio.getText());
-        double iDoppio = 2.0;
+        double iDoppio = 4.0;
         
         if (jChxDoppio.isSelected()){
             i[4] = (Doppio * iDoppio)+ cDoppio;
             String pDrink = String.format("%.2f", i[4]);
             jLabelCostDrink.setText(pDrink);
-            jTxtDoppio.setText(pDrink);
+            //jTxtDoppio.setText(pDrink);
         }
     }//GEN-LAST:event_jChxDoppioActionPerformed
 
@@ -1139,7 +1139,7 @@ double [] i = new double[12];
             i[5] = (Espress * iEspress)+ cEspresso;
             String pDrink = String.format("%.2f", i[5]);
             jLabelCostDrink.setText(pDrink);
-            jTxtEspress.setText(pDrink);
+            //jTxtEspress.setText(pDrink);
         }
     }//GEN-LAST:event_jChxEspressActionPerformed
 
@@ -1153,7 +1153,7 @@ double [] i = new double[12];
             i[6] = (Latte * iLatte)+ cLatte;
             String pDrink = String.format("%.2f", i[6]);
             jLabelCostDrink.setText(pDrink);
-            jTxtLatte.setText(pDrink);
+            //jTxtLatte.setText(pDrink);
         }
     }//GEN-LAST:event_jChxLatteActionPerformed
 
@@ -1167,7 +1167,7 @@ double [] i = new double[12];
             i[7] = (Macchiato * iMacc)+ cMacc;
             String pDrink = String.format("%.2f", i[7]);
             jLabelCostDrink.setText(pDrink);
-            jTxtMacc.setText(pDrink);
+           // jTxtMacc.setText(pDrink);
         }
     }//GEN-LAST:event_jChxMaccActionPerformed
 
@@ -1181,7 +1181,7 @@ double [] i = new double[12];
             i[9] = (Panna * iPanna)+ cPanna;
             String pDrink = String.format("%.2f", i[9]);
             jLabelCostDrink.setText(pDrink);
-            jTxtPanna.setText(pDrink);
+            //jTxtPanna.setText(pDrink);
         }
     }//GEN-LAST:event_jChxPannaActionPerformed
 
@@ -1195,7 +1195,7 @@ double [] i = new double[12];
             i[1] = (Cpop * iCpop)+ cCakepop;
             String pTreat = String.format("%.2f", i[1]);
             jTxtCostTreats.setText(pTreat);
-            jTxtCpop.setText(pTreat);
+            //jTxtCpop.setText(pTreat);
         }
     }//GEN-LAST:event_jChxCpopActionPerformed
 
@@ -1209,7 +1209,7 @@ double [] i = new double[12];
             i[2] = (CheeseCake * iCheeze)+ cCheeze;
             String pTreat = String.format("%.2f", i[2]);
             jTxtCostTreats.setText(pTreat);
-            jTxtCheez.setText(pTreat);
+            //jTxtCheez.setText(pTreat);
         }
     }//GEN-LAST:event_jChxCheezActionPerformed
 
@@ -1223,7 +1223,7 @@ double [] i = new double[12];
             i[4] = (Crois * iCrois)+ cCrois;
             String pTreat = String.format("%.2f", i[4]);
             jTxtCostTreats.setText(pTreat);
-            jTxtCrois.setText(pTreat);
+            //jTxtCrois.setText(pTreat);
         }
     }//GEN-LAST:event_jChxCroisActionPerformed
 
