@@ -187,22 +187,47 @@ double [] i = new double[12];
 
         jTxtBreve.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtBreve.setText("0");
+        jTxtBreve.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtBreveMouseClicked(evt);
+            }
+        });
         jScrollPane5.setViewportView(jTxtBreve);
 
         jTxtAffogato.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtAffogato.setText("0");
+        jTxtAffogato.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtAffogatoMouseClicked(evt);
+            }
+        });
         jScrollPane6.setViewportView(jTxtAffogato);
 
         jTxtAmer.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtAmer.setText("0");
+        jTxtAmer.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtAmerMouseClicked(evt);
+            }
+        });
         jScrollPane10.setViewportView(jTxtAmer);
 
         jTxtCappu.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtCappu.setText("0");
+        jTxtCappu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtCappuMouseClicked(evt);
+            }
+        });
         jScrollPane11.setViewportView(jTxtCappu);
 
         jTxtDoppio.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtDoppio.setText("0");
+        jTxtDoppio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtDoppioMouseClicked(evt);
+            }
+        });
         jScrollPane12.setViewportView(jTxtDoppio);
 
         jLabel2.setText("Quantity");
@@ -356,22 +381,47 @@ double [] i = new double[12];
 
         jTxtEspress.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtEspress.setText("0");
+        jTxtEspress.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtEspressMouseClicked(evt);
+            }
+        });
         jScrollPane13.setViewportView(jTxtEspress);
 
         jTxtLatte.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtLatte.setText("0");
+        jTxtLatte.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtLatteMouseClicked(evt);
+            }
+        });
         jScrollPane14.setViewportView(jTxtLatte);
 
         jTxtMacc.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtMacc.setText("0");
+        jTxtMacc.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtMaccMouseClicked(evt);
+            }
+        });
         jScrollPane15.setViewportView(jTxtMacc);
 
         jTxtRistretto.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtRistretto.setText("0");
+        jTxtRistretto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtRistrettoMouseClicked(evt);
+            }
+        });
         jScrollPane16.setViewportView(jTxtRistretto);
 
         jTxtPanna.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtPanna.setText("0");
+        jTxtPanna.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtPannaMouseClicked(evt);
+            }
+        });
         jScrollPane17.setViewportView(jTxtPanna);
 
         jLabel9.setText("Item");
@@ -777,22 +827,47 @@ double [] i = new double[12];
 
         jTxtBost.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtBost.setText("0");
+        jTxtBost.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtBostMouseClicked(evt);
+            }
+        });
         jScrollPane4.setViewportView(jTxtBost);
 
         jTxtCpop.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtCpop.setText("0");
+        jTxtCpop.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtCpopMouseClicked(evt);
+            }
+        });
         jScrollPane18.setViewportView(jTxtCpop);
 
         jTxtCheez.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtCheez.setText("0");
+        jTxtCheez.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtCheezMouseClicked(evt);
+            }
+        });
         jScrollPane19.setViewportView(jTxtCheez);
 
         jTxtCoffCake.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtCoffCake.setText("0");
+        jTxtCoffCake.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtCoffCakeMouseClicked(evt);
+            }
+        });
         jScrollPane20.setViewportView(jTxtCoffCake);
 
         jTxtCrois.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         jTxtCrois.setText("0");
+        jTxtCrois.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTxtCroisMouseClicked(evt);
+            }
+        });
         jScrollPane21.setViewportView(jTxtCrois);
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
@@ -974,7 +1049,18 @@ double [] i = new double[12];
         cost[2] = jLabelTotal.getText();
         //ref
         int refs = 1355 + (int) (Math.random()* 4238);
-        //calendar info
+        //Totalling the costs
+        double cTotal1 = (drink[0] + drink[1] + drink[2]+ drink[3] + drink[4]+ drink[1]);
+        String iTaxTotal = String.format("$ %.2f", cTotal1 / 100);
+        jLabelTax.setText(iTaxTotal);
+        double subTotal = (cTotal1);
+        String iSubTotal = String.format("$ %.2f", subTotal);
+        jLabelSubT.setText(iSubTotal);
+        double allTotal = (cTotal1);
+        String iTotal = String.format("$ % .2f", allTotal + (allTotal/100));
+        
+
+            //calendar info
             Calendar timer = Calendar.getInstance();
             timer.getTime();
             SimpleDateFormat tTime = new SimpleDateFormat("HH:mm:ss");
@@ -1226,6 +1312,81 @@ double [] i = new double[12];
             //jTxtCrois.setText(pTreat);
         }
     }//GEN-LAST:event_jChxCroisActionPerformed
+
+    private void jTxtAffogatoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtAffogatoMouseClicked
+        // TODO set text to null when clicked:
+        jTxtAffogato.setText(null);
+    }//GEN-LAST:event_jTxtAffogatoMouseClicked
+
+    private void jTxtAmerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtAmerMouseClicked
+        // TODO set text to null when clicked:
+        jTxtAmer.setText(null);
+    }//GEN-LAST:event_jTxtAmerMouseClicked
+
+    private void jTxtBreveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtBreveMouseClicked
+        // TODO set text to null when clicked:
+        jTxtBreve.setText(null);
+    }//GEN-LAST:event_jTxtBreveMouseClicked
+
+    private void jTxtCappuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtCappuMouseClicked
+        // TODO set text to null when clicked:
+        jTxtCappu.setText(null);
+    }//GEN-LAST:event_jTxtCappuMouseClicked
+
+    private void jTxtDoppioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtDoppioMouseClicked
+        // TODO set text to null when clicked:
+        jTxtDoppio.setText(null);
+    }//GEN-LAST:event_jTxtDoppioMouseClicked
+
+    private void jTxtEspressMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtEspressMouseClicked
+        // TODO set text to null when clicked:
+        jTxtEspress.setText(null);
+    }//GEN-LAST:event_jTxtEspressMouseClicked
+
+    private void jTxtLatteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtLatteMouseClicked
+        // TODO set text to null when clicked:
+        jTxtLatte.setText(null);
+    }//GEN-LAST:event_jTxtLatteMouseClicked
+
+    private void jTxtMaccMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtMaccMouseClicked
+        // TODO set text to null when clicked:
+        jTxtMacc.setText(null);
+    }//GEN-LAST:event_jTxtMaccMouseClicked
+
+    private void jTxtRistrettoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtRistrettoMouseClicked
+        // TODO set text to null when clicked:
+        jTxtRistretto.setText(null);
+    }//GEN-LAST:event_jTxtRistrettoMouseClicked
+
+    private void jTxtPannaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtPannaMouseClicked
+        // TODO set text to null when clicked:
+        jTxtPanna.setText(null);
+    }//GEN-LAST:event_jTxtPannaMouseClicked
+
+    private void jTxtBostMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtBostMouseClicked
+        // TODO set text to null when clicked:
+        jTxtBost.setText(null);
+    }//GEN-LAST:event_jTxtBostMouseClicked
+
+    private void jTxtCpopMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtCpopMouseClicked
+        // TODO set text to null when clicked:
+        jTxtCpop.setText(null);
+    }//GEN-LAST:event_jTxtCpopMouseClicked
+
+    private void jTxtCheezMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtCheezMouseClicked
+        // TODO set text to null when clicked:
+        jTxtCheez.setText(null);
+    }//GEN-LAST:event_jTxtCheezMouseClicked
+
+    private void jTxtCoffCakeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtCoffCakeMouseClicked
+        // TODO set text to null when clicked:
+        jTxtCoffCake.setText(null);
+    }//GEN-LAST:event_jTxtCoffCakeMouseClicked
+
+    private void jTxtCroisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTxtCroisMouseClicked
+        // TODO set text to null when clicked:
+        jTxtCrois.setText(null);
+    }//GEN-LAST:event_jTxtCroisMouseClicked
 
     /**
      * @param args the command line arguments
