@@ -103,7 +103,7 @@ double [] i = new double[12];
         jLabelDrinks = new javax.swing.JLabel();
         jLabelTreats = new javax.swing.JLabel();
         jLabelServChrg = new javax.swing.JLabel();
-        jLabelCostDrink = new javax.swing.JLabel();
+        jTxtCostDrink = new javax.swing.JLabel();
         jTxtCostTreats = new javax.swing.JLabel();
         jTxtServCharge = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
@@ -706,12 +706,12 @@ double [] i = new double[12];
         jLabelServChrg.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabelServChrg.setText("Service Charge");
 
-        jLabelCostDrink.setBackground(new java.awt.Color(255, 255, 255));
-        jLabelCostDrink.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabelCostDrink.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelCostDrink.setText("0");
-        jLabelCostDrink.setBorder(javax.swing.BorderFactory.createLineBorder(null));
-        jLabelCostDrink.setOpaque(true);
+        jTxtCostDrink.setBackground(new java.awt.Color(255, 255, 255));
+        jTxtCostDrink.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jTxtCostDrink.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jTxtCostDrink.setText("0");
+        jTxtCostDrink.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtCostDrink.setOpaque(true);
 
         jTxtCostTreats.setBackground(new java.awt.Color(255, 255, 255));
         jTxtCostTreats.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -739,7 +739,7 @@ double [] i = new double[12];
                     .addComponent(jLabelServChrg))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabelCostDrink, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
+                    .addComponent(jTxtCostDrink, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
                     .addComponent(jTxtCostTreats, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jTxtServCharge, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -750,7 +750,7 @@ double [] i = new double[12];
                 .addContainerGap(33, Short.MAX_VALUE)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(jLabelCostDrink)
+                        .addComponent(jTxtCostDrink)
                         .addGap(42, 42, 42))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabelDrinks)
@@ -966,98 +966,104 @@ double [] i = new double[12];
 
     private void jChxAffogatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxAffogatoActionPerformed
         // TODO add cost of item here:
-        double cAff = Double.parseDouble(jLabelCostDrink.getText());
+        double cAff = Double.parseDouble(jTxtCostDrink.getText());
         double Affogato = Double.parseDouble(jTxtAffogato.getText());
         double iAffo = 2.0;
         
         if (jChxAffogato.isSelected()){
             i[0] = (Affogato * iAffo)+ cAff;
             String pDrink = String.format("%.2f", i[0]);
-            jLabelCostDrink.setText(pDrink);
+            jTxtCostDrink.setText(pDrink);
             //jTxtAffogato.setText(pDrink);
         }
     }//GEN-LAST:event_jChxAffogatoActionPerformed
 
     private void jChxAmerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxAmerActionPerformed
         // TODO add cost of item here:
-        double cAmericano = Double.parseDouble(jLabelCostDrink.getText());
+        double cAmericano = Double.parseDouble(jTxtCostDrink.getText());
         double Americano = Double.parseDouble(jTxtAmer.getText());
         double iAmericano = 2.50;
         
         if (jChxAmer.isSelected()){
             i[1] = (Americano * iAmericano)+ cAmericano;
             String pDrink = String.format("%.2f", i[1]);
-            jLabelCostDrink.setText(pDrink);
+            jTxtCostDrink.setText(pDrink);
             //jTxtAmer.setText(pDrink);
         }
     }//GEN-LAST:event_jChxAmerActionPerformed
 
     private void jChxCappuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxCappuActionPerformed
         // TODO add cost of item:
-        double cCappu = Double.parseDouble(jLabelCostDrink.getText());
+        double cCappu = Double.parseDouble(jTxtCostDrink.getText());
         double Cappucino = Double.parseDouble(jTxtCappu.getText());
         double iCappu = 1.0;
         
         if (jChxCappu.isSelected()){
             i[3] = (Cappucino * iCappu)+ cCappu;
             String pDrink = String.format("%.2f", i[3]);
-            jLabelCostDrink.setText(pDrink);
+            jTxtCostDrink.setText(pDrink);
            // jTxtCappu.setText(pDrink);
         }
     }//GEN-LAST:event_jChxCappuActionPerformed
 
     private void jChxRistrettoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxRistrettoActionPerformed
         // TODO add your handling code here:
-        double cRistretto = Double.parseDouble(jLabelCostDrink.getText());
+        double cRistretto = Double.parseDouble(jTxtCostDrink.getText());
         double Ristretto = Double.parseDouble(jTxtRistretto.getText());
         double iRistretto = 5.0;
         
         if (jChxRistretto.isSelected()){
             i[8] = (Ristretto * iRistretto)+ cRistretto;
             String pDrink = String.format("%.2f", i[8]);
-            jLabelCostDrink.setText(pDrink);
+            jTxtCostDrink.setText(pDrink);
             //jTxtRistretto.setText(pDrink);
         }
     }//GEN-LAST:event_jChxRistrettoActionPerformed
 
     private void jBtnTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnTotalActionPerformed
         // TODO add your handling code here:
+            drink [0] = Double.parseDouble(jTxtCostDrink.getText());
+            drink [1] = Double.parseDouble(jTxtCostTreats.getText());
+            drink [2] = Double.parseDouble(jTxtServCharge.getText());
+        //Totalling the costs
+            double cTotal1 = (drink[0] + drink[1] + drink[2]);
+            String iTaxTotal = String.format("$ %.2f", cTotal1 / 100);
+            jLabelTax.setText(iTaxTotal);
+            double subTotal = (cTotal1);
+            String iSubTotal = String.format("$ %.2f", subTotal);
+            jLabelSubT.setText(iSubTotal);
+            double allTotal = (cTotal1);
+            String iTotal = String.format("$ % .2f", allTotal + (allTotal/100));
     }//GEN-LAST:event_jBtnTotalActionPerformed
 
     private void jBtnReceiptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnReceiptActionPerformed
         // TODO add your handling code here:
-        //drinks
-        drink[0] = Double.parseDouble(jTxtAffogato.getText());
-        drink[1] = Double.parseDouble(jTxtAmer.getText());
-        drink[2] = Double.parseDouble(jTxtBreve.getText());
-        drink[3] = Double.parseDouble(jTxtCappu.getText());
-        drink[4] = Double.parseDouble(jTxtDoppio.getText());
-        drink[5] = Double.parseDouble(jTxtEspress.getText());
-        drink[6] = Double.parseDouble(jTxtLatte.getText());
-        drink[7] = Double.parseDouble(jTxtMacc.getText());
-        drink[8] = Double.parseDouble(jTxtRistretto.getText());
-        drink[9] = Double.parseDouble(jTxtPanna.getText());
-        //treats
-        treat[0] = Double.parseDouble(jTxtBost.getText());
-        treat[1] = Double.parseDouble(jTxtCpop.getText());
-        treat[2] = Double.parseDouble(jTxtCheez.getText());
-        treat[3] = Double.parseDouble(jTxtCoffCake.getText());
-        treat[4] = Double.parseDouble(jTxtCrois.getText());
+        // Drink, treat, and serv charge index of
+       
+//drinks
+//        drink[0] = Double.parseDouble(jTxtAffogato.getText());
+//        drink[1] = Double.parseDouble(jTxtAmer.getText());
+//        drink[2] = Double.parseDouble(jTxtBreve.getText());
+//        drink[3] = Double.parseDouble(jTxtCappu.getText());
+//        drink[4] = Double.parseDouble(jTxtDoppio.getText());
+//        drink[5] = Double.parseDouble(jTxtEspress.getText());
+//        drink[6] = Double.parseDouble(jTxtLatte.getText());
+//        drink[7] = Double.parseDouble(jTxtMacc.getText());
+//        drink[8] = Double.parseDouble(jTxtRistretto.getText());
+//        drink[9] = Double.parseDouble(jTxtPanna.getText());
+//        //treats
+//        treat[0] = Double.parseDouble(jTxtBost.getText());
+//        treat[1] = Double.parseDouble(jTxtCpop.getText());
+//        treat[2] = Double.parseDouble(jTxtCheez.getText());
+//        treat[3] = Double.parseDouble(jTxtCoffCake.getText());
+//        treat[4] = Double.parseDouble(jTxtCrois.getText());
         //cost
         cost[0] = jLabelTax.getText();
         cost[1] = jLabelSubT.getText();
         cost[2] = jLabelTotal.getText();
         //ref
         int refs = 1355 + (int) (Math.random()* 4238);
-        //Totalling the costs
-        double cTotal1 = (drink[0] + drink[1] + drink[2]+ drink[3] + drink[4]+ drink[1]);
-        String iTaxTotal = String.format("$ %.2f", cTotal1 / 100);
-        jLabelTax.setText(iTaxTotal);
-        double subTotal = (cTotal1);
-        String iSubTotal = String.format("$ %.2f", subTotal);
-        jLabelSubT.setText(iSubTotal);
-        double allTotal = (cTotal1);
-        String iTotal = String.format("$ % .2f", allTotal + (allTotal/100));
+        
         
 
             //calendar info
@@ -1181,7 +1187,7 @@ double [] i = new double[12];
         jLabelSubT.setText("0");
         jLabelTotal.setText("0");
         //Cost of items
-        jLabelCostDrink.setText("0");
+        jTxtCostDrink.setText("0");
         jTxtCostTreats.setText("0");
         jTxtServCharge.setText("0");
         
@@ -1189,84 +1195,84 @@ double [] i = new double[12];
 
     private void jChxBreveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxBreveActionPerformed
         // TODO add cost of item here:
-        double cBreve = Double.parseDouble(jLabelCostDrink.getText());
+        double cBreve = Double.parseDouble(jTxtCostDrink.getText());
         double Breve = Double.parseDouble(jTxtBreve.getText());
         double iBreve = 2.0;
         
         if (jChxBreve.isSelected()){
             i[2] = (Breve * iBreve)+ cBreve;
             String pDrink = String.format("%.2f", i[2]);
-            jLabelCostDrink.setText(pDrink);
+            jTxtCostDrink.setText(pDrink);
             //jTxtBreve.setText(pDrink);
         }
     }//GEN-LAST:event_jChxBreveActionPerformed
 
     private void jChxDoppioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxDoppioActionPerformed
         // TODO add cost of item here:
-        double cDoppio = Double.parseDouble(jLabelCostDrink.getText());
+        double cDoppio = Double.parseDouble(jTxtCostDrink.getText());
         double Doppio = Double.parseDouble(jTxtDoppio.getText());
         double iDoppio = 4.0;
         
         if (jChxDoppio.isSelected()){
             i[4] = (Doppio * iDoppio)+ cDoppio;
             String pDrink = String.format("%.2f", i[4]);
-            jLabelCostDrink.setText(pDrink);
+            jTxtCostDrink.setText(pDrink);
             //jTxtDoppio.setText(pDrink);
         }
     }//GEN-LAST:event_jChxDoppioActionPerformed
 
     private void jChxEspressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxEspressActionPerformed
         // TODO add cost of item here:
-        double cEspresso = Double.parseDouble(jLabelCostDrink.getText());
+        double cEspresso = Double.parseDouble(jTxtCostDrink.getText());
         double Espress = Double.parseDouble(jTxtEspress.getText());
         double iEspress = 0.90;
         
         if (jChxEspress.isSelected()){
             i[5] = (Espress * iEspress)+ cEspresso;
             String pDrink = String.format("%.2f", i[5]);
-            jLabelCostDrink.setText(pDrink);
+            jTxtCostDrink.setText(pDrink);
             //jTxtEspress.setText(pDrink);
         }
     }//GEN-LAST:event_jChxEspressActionPerformed
 
     private void jChxLatteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxLatteActionPerformed
         // TODO add cost of item here:
-        double cLatte = Double.parseDouble(jLabelCostDrink.getText());
+        double cLatte = Double.parseDouble(jTxtCostDrink.getText());
         double Latte = Double.parseDouble(jTxtLatte.getText());
         double iLatte = 2.0;
         
         if (jChxLatte.isSelected()){
             i[6] = (Latte * iLatte)+ cLatte;
             String pDrink = String.format("%.2f", i[6]);
-            jLabelCostDrink.setText(pDrink);
+            jTxtCostDrink.setText(pDrink);
             //jTxtLatte.setText(pDrink);
         }
     }//GEN-LAST:event_jChxLatteActionPerformed
 
     private void jChxMaccActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxMaccActionPerformed
         // TODO add cost of item here:
-        double cMacc = Double.parseDouble(jLabelCostDrink.getText());
+        double cMacc = Double.parseDouble(jTxtCostDrink.getText());
         double Macchiato = Double.parseDouble(jTxtLatte.getText());
         double iMacc = 2.0;
         
         if (jChxMacc.isSelected()){
             i[7] = (Macchiato * iMacc)+ cMacc;
             String pDrink = String.format("%.2f", i[7]);
-            jLabelCostDrink.setText(pDrink);
+            jTxtCostDrink.setText(pDrink);
            // jTxtMacc.setText(pDrink);
         }
     }//GEN-LAST:event_jChxMaccActionPerformed
 
     private void jChxPannaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChxPannaActionPerformed
         // TODO add your handling code here:
-        double cPanna = Double.parseDouble(jLabelCostDrink.getText());
+        double cPanna = Double.parseDouble(jTxtCostDrink.getText());
         double Panna = Double.parseDouble(jTxtPanna.getText());
         double iPanna = 4.0;
         
         if (jChxPanna.isSelected()){
             i[9] = (Panna * iPanna)+ cPanna;
             String pDrink = String.format("%.2f", i[9]);
-            jLabelCostDrink.setText(pDrink);
+            jTxtCostDrink.setText(pDrink);
             //jTxtPanna.setText(pDrink);
         }
     }//GEN-LAST:event_jChxPannaActionPerformed
@@ -1470,7 +1476,6 @@ double [] i = new double[12];
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JLabel jLabelCostDrink;
     private javax.swing.JLabel jLabelDrinks;
     private javax.swing.JLabel jLabelServChrg;
     private javax.swing.JLabel jLabelSubT;
@@ -1510,6 +1515,7 @@ double [] i = new double[12];
     private javax.swing.JEditorPane jTxtCappu;
     private javax.swing.JEditorPane jTxtCheez;
     private javax.swing.JEditorPane jTxtCoffCake;
+    private javax.swing.JLabel jTxtCostDrink;
     private javax.swing.JLabel jTxtCostTreats;
     private javax.swing.JEditorPane jTxtCpop;
     private javax.swing.JEditorPane jTxtCrois;
