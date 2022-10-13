@@ -142,11 +142,11 @@ double [] i = new double[12];
         jLabel1.setText("The Java Stop");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 0, -1, -1));
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jChxAffogato.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxAffogato.setText("Affogato");
-        jChxAffogato.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jChxAffogato.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jChxAffogato.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jChxAffogatoActionPerformed(evt);
@@ -185,7 +185,7 @@ double [] i = new double[12];
             }
         });
 
-        jTxtBreve.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtBreve.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtBreve.setText("0");
         jTxtBreve.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -194,7 +194,7 @@ double [] i = new double[12];
         });
         jScrollPane5.setViewportView(jTxtBreve);
 
-        jTxtAffogato.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtAffogato.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtAffogato.setText("0");
         jTxtAffogato.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -203,7 +203,7 @@ double [] i = new double[12];
         });
         jScrollPane6.setViewportView(jTxtAffogato);
 
-        jTxtAmer.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtAmer.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtAmer.setText("0");
         jTxtAmer.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -212,7 +212,7 @@ double [] i = new double[12];
         });
         jScrollPane10.setViewportView(jTxtAmer);
 
-        jTxtCappu.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtCappu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtCappu.setText("0");
         jTxtCappu.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -221,7 +221,7 @@ double [] i = new double[12];
         });
         jScrollPane11.setViewportView(jTxtCappu);
 
-        jTxtDoppio.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtDoppio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtDoppio.setText("0");
         jTxtDoppio.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -337,7 +337,7 @@ double [] i = new double[12];
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 360, 220));
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jChxEspress.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxEspress.setText("Espresso");
@@ -379,7 +379,7 @@ double [] i = new double[12];
             }
         });
 
-        jTxtEspress.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtEspress.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtEspress.setText("0");
         jTxtEspress.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -388,7 +388,7 @@ double [] i = new double[12];
         });
         jScrollPane13.setViewportView(jTxtEspress);
 
-        jTxtLatte.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtLatte.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtLatte.setText("0");
         jTxtLatte.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -397,7 +397,7 @@ double [] i = new double[12];
         });
         jScrollPane14.setViewportView(jTxtLatte);
 
-        jTxtMacc.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtMacc.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtMacc.setText("0");
         jTxtMacc.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -406,7 +406,7 @@ double [] i = new double[12];
         });
         jScrollPane15.setViewportView(jTxtMacc);
 
-        jTxtRistretto.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtRistretto.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtRistretto.setText("0");
         jTxtRistretto.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -415,7 +415,7 @@ double [] i = new double[12];
         });
         jScrollPane16.setViewportView(jTxtRistretto);
 
-        jTxtPanna.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtPanna.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtPanna.setText("0");
         jTxtPanna.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -537,7 +537,7 @@ double [] i = new double[12];
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, 380, 220));
 
-        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jTxtReceipt.setColumns(20);
         jTxtReceipt.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
@@ -563,7 +563,7 @@ double [] i = new double[12];
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 110, 490, 640));
 
-        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabelTaxes.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabelTaxes.setText("Tax");
@@ -578,21 +578,21 @@ double [] i = new double[12];
         jLabelTax.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabelTax.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelTax.setText("0");
-        jLabelTax.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabelTax.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabelTax.setOpaque(true);
 
         jLabelSubT.setBackground(new java.awt.Color(255, 255, 255));
         jLabelSubT.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabelSubT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelSubT.setText("0");
-        jLabelSubT.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabelSubT.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabelSubT.setOpaque(true);
 
         jLabelTotal.setBackground(new java.awt.Color(255, 255, 255));
         jLabelTotal.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabelTotal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelTotal.setText("0");
-        jLabelTotal.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabelTotal.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabelTotal.setOpaque(true);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -632,7 +632,7 @@ double [] i = new double[12];
 
         getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 620, 320, 170));
 
-        jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jBtnTotal.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jBtnTotal.setText("Total");
@@ -695,7 +695,7 @@ double [] i = new double[12];
 
         getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 760, 480, 60));
 
-        jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabelDrinks.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabelDrinks.setText("Cost of Drinks");
@@ -710,21 +710,21 @@ double [] i = new double[12];
         jTxtCostDrink.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jTxtCostDrink.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jTxtCostDrink.setText("0");
-        jTxtCostDrink.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtCostDrink.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtCostDrink.setOpaque(true);
 
         jTxtCostTreats.setBackground(new java.awt.Color(255, 255, 255));
         jTxtCostTreats.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jTxtCostTreats.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jTxtCostTreats.setText("0");
-        jTxtCostTreats.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtCostTreats.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtCostTreats.setOpaque(true);
 
         jTxtServCharge.setBackground(new java.awt.Color(255, 255, 255));
         jTxtServCharge.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jTxtServCharge.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jTxtServCharge.setText("0");
-        jTxtServCharge.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtServCharge.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtServCharge.setOpaque(true);
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -767,7 +767,7 @@ double [] i = new double[12];
 
         getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 620, 320, 170));
 
-        jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jChxCrois.setFont(new java.awt.Font("Book Antiqua", 0, 18)); // NOI18N
         jChxCrois.setText("Croissant");
@@ -825,7 +825,7 @@ double [] i = new double[12];
 
         jLabel37.setText("$1.00");
 
-        jTxtBost.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtBost.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtBost.setText("0");
         jTxtBost.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -834,7 +834,7 @@ double [] i = new double[12];
         });
         jScrollPane4.setViewportView(jTxtBost);
 
-        jTxtCpop.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtCpop.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtCpop.setText("0");
         jTxtCpop.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -843,7 +843,7 @@ double [] i = new double[12];
         });
         jScrollPane18.setViewportView(jTxtCpop);
 
-        jTxtCheez.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtCheez.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtCheez.setText("0");
         jTxtCheez.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -852,7 +852,7 @@ double [] i = new double[12];
         });
         jScrollPane19.setViewportView(jTxtCheez);
 
-        jTxtCoffCake.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtCoffCake.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtCoffCake.setText("0");
         jTxtCoffCake.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -861,7 +861,7 @@ double [] i = new double[12];
         });
         jScrollPane20.setViewportView(jTxtCoffCake);
 
-        jTxtCrois.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jTxtCrois.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jTxtCrois.setText("0");
         jTxtCrois.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
